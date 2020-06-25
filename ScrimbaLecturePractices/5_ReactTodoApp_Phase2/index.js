@@ -1,6 +1,15 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import TodoItem from "./TodoItem"
 
-import App from "./App"
+function App() {
+    return (
+        <div className="todo-list">
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+        </div>
+    )
+}
 
-ReactDOM.render(<App />, document.getElementById("root"))
+export default App
